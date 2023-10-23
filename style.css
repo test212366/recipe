@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: rgb(255, 200, 200);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+}
+.mobile-container {
+	background-color: #fff;
+	width: 400px;
+	border-radius: 3px;
+	overflow: hidden;
+	width: 400px;
+}
+img {
+	max-width: 100%;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+header input {
+	background-color: rgb(214, 214, 214);
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+}
+header button {
+	font-size: 1.5rem;
+	margin-left: 10px;
+}
+.fav-container {
+	background-color: rgb(168, 213, 255);
+	padding: 0.25rem 1rem;
+	text-align: center;
+}
+.fav-meals {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+}
+.fav-meals li {
+	position: relative;
+	margin: 5px;
+	width: 85px;
+}
+
+.fav-meals li img {
+	border: 2px #fff;
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
+}
+.fav-meals li span {
+	display: inline-block;
+	font-size: 0.9rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 75px;
+}
+.meal {
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 1.5rem;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.meal-header {
+	position: relative;
+}
+.meal-header .random {
+	background-color: #fff;
+	position: absolute;
+	top: 1rem;
+	padding: 0.25rem 0.5rem;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.meal-header img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+.meal-body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+.meal-body h4 {
+	margin: 0;
+}
+.meal-body .fav-btn {
+	padding: 6px;
+	border: 1px solid #000;
+	font-size: 1.2rem;
+	cursor: pointer;
+	background-color: transparent;
+}
+.meal-body .fav-btn.active {
+	background-color: rgb(255, 124, 124);
+}
+.meal-info-container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.meal-info-container.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.meal-info {
+	background-color: #fff;
+	max-width: 600px;
+	width: 100%;
+	padding: 2rem;
+	border-radius: 5px;
+}
+.meal-info h2 {
+	text-align: center;
+}
